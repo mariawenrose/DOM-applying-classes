@@ -21,6 +21,31 @@ div {
   background-color: blue;
 }
 
+.gradient {
+  background-color: aquamarine;
+  background-image: linear-gradient(to bottom, green , purple);
+}
+
+.transition {
+  background-color: red;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 4s; 
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
 .invisible {
   display: none;
 }
